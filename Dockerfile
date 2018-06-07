@@ -17,4 +17,6 @@ RUN apt-get update \
 && pip install requests==2.18.4 \
 && pip install redis==2.10.6 \
 && pip install MySQL-python==1.2.5 \
+&& pip install bs4==0.0.1 \
+&& pip install nltk==3.3.0 \
 && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
