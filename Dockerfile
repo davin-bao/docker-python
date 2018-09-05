@@ -13,4 +13,5 @@ RUN apt-get update \
 && pip install selenium==3.14.0 \
 && pip install sqlalchemy==1.2.11 \
 && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
-&& cp /home/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/bin/
+&& export QT_QPA_PLATFORM=offscreen \
+&& export QT_QPA_FONTDIR=/usr/share/fonts
