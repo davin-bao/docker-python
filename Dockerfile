@@ -12,5 +12,5 @@ RUN apt-get update \
 && pip install bs4==0.0.1 \
 && pip install selenium==3.14.0 \
 && pip install sqlalchemy==1.2.11 \
-&& cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+&& cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
 && cp /home/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/bin/
