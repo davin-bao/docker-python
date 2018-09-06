@@ -20,3 +20,8 @@ RUN apt-get update \
 && pip install bs4==0.0.1 \
 && pip install nltk==3.3.0 \
 && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+COPY phantomjs.tar.gz /usr/bin/phantomjs.tar.gz
+RUN cd /usr/bin \
+&& tar -zxvf phantomjs.tar.gz \
+&& rm -rf /usr/bin/phantomjs.tar.gz
