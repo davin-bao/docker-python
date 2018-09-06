@@ -19,4 +19,5 @@ RUN apt-get update \
 COPY phantomjs.tar.gz /usr/bin/phantomjs.tar.gz
 RUN cd /usr/bin \
 && tar -zxvf phantomjs.tar.gz \
-&& rm -rf /usr/bin/phantomjs.tar.gz
+&& rm -rf /usr/bin/phantomjs.tar.gz 、
+&& chmod +x /usr/bin/phantomjs
