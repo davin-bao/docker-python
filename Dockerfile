@@ -15,3 +15,8 @@ RUN apt-get update \
 && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
 && export QT_QPA_PLATFORM=offscreen \
 && export QT_QPA_FONTDIR=/usr/share/fonts
+
+COPY phantomjs.tar.gz /usr/bin/phantomjs.tar.gz
+RUN cd /usr/bin \
+&& tar -zxvf phantomjs.tar.gz \
+&& rm -rf /usr/bin/phantomjs.tar.gz
