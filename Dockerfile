@@ -11,9 +11,11 @@ RUN apt-get update \
 && pip install lxml==4.2.4 \
 && pip install bs4==0.0.1 \
 && pip install selenium==3.14.0 \
-&& pip install sqlalchemy==1.2.11 \
-&& cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
-&& export QT_QPA_PLATFORM=offscreen \
+&& pip install sqlalchemy==1.2.11
+
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+RUN export QT_QPA_PLATFORM=offscreen \
 && export QT_QPA_FONTDIR=/usr/share/fonts
 
 COPY phantomjs.tar.gz /usr/bin/phantomjs.tar.gz
